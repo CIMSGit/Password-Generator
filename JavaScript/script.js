@@ -88,19 +88,17 @@ var upperCasedCharacters = [
   'Z'
 ];
 
-// Function to prompt user for password options
-function getPasswordOptions() {
-
-}
-
-// Function for getting a random element from an array
-function getRandom(arr) {
-
-}
 
 // Function to generate password with user input
+    // creating a promt for user input about the number of characters 
+  
 function generatePassword() {
+//  creating a new array holding the information of the customer character options
+  let characters=[]
+// getting user input for the number of characters
+  let charactersNumber = prompt("How many characters would you like to have in your password?" );
 
+  
 }
 
 // Get references to the #generate element
