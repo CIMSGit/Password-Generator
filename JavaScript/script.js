@@ -96,7 +96,15 @@ function generatePassword() {
 // gets user input for the number of characters
   let charactersNumber = prompt("How many characters would you like to have in your password?" );
 
-//  creates if statements for builduin up the new array
+// adds while loop to get the characters between 10 to 64
+ //  creates if statements for builduin up the new array
+
+while (charactersNumber < 10 || charactersNumber >64 ) {
+  alert("Please choose between 10 and 64 characters");
+  alert("Click again on Generate Password")
+  return "Try again, please!";
+
+}
   if (confirm("Would you like to have Upper Case Characters?")) {
     characters = characters.concat(upperCasedCharacters)
     
@@ -117,7 +125,7 @@ function generatePassword() {
   }
   
   if (characters.length === 0 ){ alert("At least one character type should be selected")
-  alert("Click again on Generate Password")
+  alert("Click again on the Generate Password")
   return "Try again please"
 }
 
