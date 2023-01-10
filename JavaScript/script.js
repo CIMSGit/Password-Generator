@@ -93,7 +93,7 @@ var upperCasedCharacters = [
 function generatePassword() {
 //  creates a new array holding the information of the customer's character options
   let characters=[]
-// gets user input for the number of characters
+// gets user's input for the number of characters
   let charactersNumber = prompt("How many characters would you like to have in your password?" );
 
 // adds while loop to get the characters between 10 to 64
