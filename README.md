@@ -3,7 +3,6 @@
 ## Table of contents
 * Description
 * Resources
-* Usage
 * Screenshot
 * Deployed Project
 * LICENSE
@@ -20,8 +19,6 @@ Created an app that runs in the browser and features dynamically updated HTML an
 
 <hr>
 
-## Usage 
-Open the Chrome DevTools by pressing Command+Option+I (MacOS) or Control+Shift+I (Windows). A console panel should open either below or to the side of the webpage in the browser. There you will see a list of analysis of the dataset provided.
 
 ## Screenshot 
 
