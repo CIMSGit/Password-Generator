@@ -89,16 +89,39 @@ var upperCasedCharacters = [
 ];
 
 
-// Function to generate password with user input
-    // creating a promt for user input about the number of characters 
-  
+// Function to generate password with user input  
 function generatePassword() {
-//  creating a new array holding the information of the customer character options
+//  creates a new array holding the information of the customer's character options
   let characters=[]
-// getting user input for the number of characters
+// gets user input for the number of characters
   let charactersNumber = prompt("How many characters would you like to have in your password?" );
 
+//  creates if statements for builduin up the new array
+  if (confirm("Would you like to have Upper Case Characters?")) {
+    characters = characters.concat(upperCasedCharacters)
+    
+  }
+
+  if (confirm("Would you like to have Special Characters?")) {
+    characters = characters.concat(specialCharacters)
+    
+  }
+
+  if (confirm("Would you like to have Numbers?")) {
+    characters = characters.concat(numericCharacters)
+    
+  }
+  if (confirm("Would you like to have Lower Case Characters?")) {
+    characters = characters.concat(lowerCasedCharacters)
+    
+  }
   
+  if (characters.length === 0 ){ alert("At least one character type should be selected")
+  alert("Click again on Generate Password")
+  return "Try again please"
+}
+
+  return 
 }
 
 // Get references to the #generate element
