@@ -97,7 +97,7 @@ function generatePassword() {
   let charactersNumber = prompt("How many characters would you like to have in your password?" );
 
 // adds while loop to get the characters between 10 to 64
- //  creates if statements for builduin up the new array
+ //  creates if statements for building up the new array
 
 while (charactersNumber < 10 || charactersNumber >64 ) {
   alert("Please choose between 10 and 64 characters");
@@ -128,8 +128,13 @@ while (charactersNumber < 10 || charactersNumber >64 ) {
   alert("Click again on the Generate Password")
   return "Try again please"
 }
-
-  return 
+// for loop that creates a new string by building up random characters, based on the user's input 
+let result  = "";
+for (let i = 0; i < charactersNumber; i++) {
+  result += characters[Math.floor(Math.random()*characters.length)];
+  
+}
+  return result;
 }
 
 // Get references to the #generate element
